@@ -38,5 +38,5 @@ func (s *Indicator) Success() {
 
 // Failure sets the failure symbol and sends a stop signal
 func (s *Indicator) Failure() {
-	s.symbol = logsymbols.Error
+	s.symbol = chalk.Red(logsymbols.Error)
 }
