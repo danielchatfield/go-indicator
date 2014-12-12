@@ -33,7 +33,7 @@ func (s *Indicator) Next() *Indicator {
 
 // Success sets the success symbol and sends a stop signal
 func (s *Indicator) Success() {
-	s.symbol = logsymbols.Success
+	s.symbol = chalk.Green(logsymbols.Success)
 }
 
 // Failure sets the failure symbol and sends a stop signal
